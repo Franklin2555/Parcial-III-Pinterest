@@ -1,0 +1,7 @@
+{
+  "name": "Pinterest(Parcial III)",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
