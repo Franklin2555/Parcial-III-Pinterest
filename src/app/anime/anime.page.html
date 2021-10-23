@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-item class="text">Mejores fondos de anime</ion-item>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+     <ion-col size="6" *ngFor="let a of img">
+       <ion-card>
+         <img [src]="a.img">
+         <ion-buttons>
+          <ion-icon (click)="onClick()" slot="icon-only" color="danger"[name]="favorito ? 'heart' : 'heart-outline'"></ion-icon>
+        </ion-buttons>       
+          </ion-card>
+   </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

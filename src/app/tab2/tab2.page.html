@@ -1,17 +1,82 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
+  <!-- Searchbar with a placeholder -->
+<ion-searchbar color="shade" placeholder="Busca ideas"></ion-searchbar>
+    <ion-icon slot="end" name="camera-sharp"></ion-icon>
   </ion-toolbar>
 </ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div id="texto">
+    <p><strong>Inspiración diaria</strong></p>
+  </div>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <ion-slides>
+          <ion-slide>
+            <ion-card>
+              <ion-img src="assets/t.jpeg"></ion-img>
+              <p id="t">¡Qué rico!</p>
+              <h3 id="t2">Pasteles para</h3>
+              <h3 id="t3">Halloween</h3>
+            </ion-card>
+          </ion-slide>
+          <ion-slide>
+            <ion-card>
+              <ion-img src="assets/ma.jpeg"></ion-img>
+              <p id="t">Mucho brillo</p>
+              <h3 id="t2">Maquillaje con strass</h3>
+            </ion-card>
+          </ion-slide>
+          <ion-slide>
+            <ion-card>
+              <ion-img src="assets/arte.jpeg"></ion-img>
+              <p id="t">Arte moderna</p>
+              <h3 id="t2">Cuadros de</h3>
+              <h3 id="t3">impresionismo</h3>
+            </ion-card>
+          </ion-slide>
+          <ion-slide>
+              <ion-button color="dark">Ver más</ion-button>
+          </ion-slide>
+        </ion-slides>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <div id="texto">
+    <p><strong>Ideas para vos</strong></p>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6" >
+          <ion-card-content>
+            <ion-img src="assets/a.jpeg"></ion-img>
+            <h3 id="t4">ANIME</h3>
+          </ion-card-content>
+        </ion-col>
+
+        <ion-col size="6" >
+          <ion-card-content>
+            <ion-img src="assets/c.jpeg"></ion-img>
+            <h3 id="t5">FONDOS</h3>
+          </ion-card-content>
+        </ion-col>
+        <ion-col size="6" >
+          <ion-card-content>
+            <ion-img src="assets/n.jpeg"></ion-img>
+            <p id="t6">Naturaleza</p>
+          </ion-card-content>
+        </ion-col>
+
+        <ion-col size="6" >
+          <ion-card-content>
+            <ion-img src="assets/e.jpeg"></ion-img>
+            
+            <h3 id="t7">ANIMALES </h3>
+          </ion-card-content>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+  </div>
 </ion-content>

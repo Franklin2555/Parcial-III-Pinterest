@@ -23,6 +23,18 @@ const routes: Routes = [
         path: 'tab4',
         loadChildren: () => import('../tab4/tab4.module').then(m => m.Tab4PageModule)
       },
+      {
+        path: 'fondos',
+        loadChildren: () => import('../fondos/fondos.module').then( m => m.FondosPageModule)
+      },
+      {
+        path: 'anime',
+        loadChildren: () => import('../anime/anime.module').then( m => m.AnimePageModule)
+      },
+      {
+        path: 'mensajes',
+        loadChildren: () => import('../mensajes/mensajes.module').then( m => m.MensajesPageModule)
+      },
       
       {
         path: '',
